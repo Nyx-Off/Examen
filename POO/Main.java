@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-    Etudiant etudiant = new Etudiant("Dupont", "Jean", 123, new Date(), "Master");
+    Etudiant etudiant = new Etudiant("Dupont", "Jean", 123, new Date(), "Master",new ArrayList<Cours>());
 
     etudiant.montrerDetails();
     System.out.println("Date d'inscription: " + etudiant.getDateInscription());
