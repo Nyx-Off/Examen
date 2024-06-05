@@ -1,18 +1,23 @@
 function calculPourboire(montant, service) {
-    const pourboires = {
-        "terrible": 0,
-        "poor": 0.05,
-        "good": 0.1,
-        "great": 0.15,
-        "excellent": 0.2
-    };
+    var pourcentagePourboire;
 
     service = service.toLowerCase();
 
-    if (!pourboires.hasOwnProperty(service)) {
+    if (service === "terrible") {
+        pourcentagePourboire = 0;
+    } else if (service === "poor") {
+        pourcentagePourboire = 0.05;
+    } else if (service === "good") {
+        pourcentagePourboire = 0.1;
+    } else if (service === "great") {
+        pourcentagePourboire = 0.15;
+    } else if (service === "excellent") {
+        pourcentagePourboire = 0.2;
+    } else {
         return "Rating not recognised";
     }
 
-    const pourboire = Math.ceil(montant * pourboires[service]);
+    var pourboire = Math.ceil(montant * pourcentagePourboire);
+
     return pourboire;
 }
