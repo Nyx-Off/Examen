@@ -44,4 +44,11 @@ public class Cours {
         System.out.println("Durée: " + duree + " heures");
         System.out.println("Places restantes: " + placesRestantes);
     }
+
+    public void participer() {
+    }
+
+    public void quitter() {
+    }
+
 }
