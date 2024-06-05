@@ -46,9 +46,17 @@ public class Cours {
     }
 
     public void participer() {
+        if (placesRestantes > 0) {
+            placesRestantes--;
+            System.out.println("Vous participé au cours. Places restantes : " + placesRestantes);
+        } else {
+            System.out.println("Désolé, il n'y a plus de places disponibles pour ce cours.");
+        }
     }
-
+    
     public void quitter() {
+        placesRestantes++;
+        System.out.println("Vous avez quitté le cours. Places restantes : " + placesRestantes);
     }
 
 }
