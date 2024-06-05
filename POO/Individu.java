@@ -5,7 +5,6 @@ public abstract class Individu {
     protected String prenom;
     protected int identifiant;
 
-
     //constructeur
 
     public Individu(String nom, String prenom, int identifiant){
@@ -41,5 +40,9 @@ public abstract class Individu {
     public int setIdentifiant(int identifiant){
         return this.identifiant = identifiant;
     }
+
+    // méthode abstraite montrerDetails()
+
+    public abstract void montrerDetails();
     
 }
