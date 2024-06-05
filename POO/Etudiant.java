@@ -28,6 +28,9 @@ public class Etudiant extends Individu {
     }
 
     public void montrerDetails() {
+        System.out.println("Nom: " + getNom());
+        System.out.println("Prénom: " + getPrenom());
+        System.out.println("Identifiant: " + getIdentifiant());
     }
 
 }
