@@ -22,6 +22,6 @@ function calculateTip(amount, rating) {
     return Math.ceil(amount * tipPercentage);
 }
 
-console.log(calculateTip(20, "ExcellEnt"));  
-console.log(calculateTip(26.95, "good")); 
+console.log(calculateTip(20, "ExcellEnt"));
+console.log(calculateTip(26.95, "good"));
 console.log(calculateTip(20, "hi")); 

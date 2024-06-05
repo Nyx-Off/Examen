@@ -4,6 +4,6 @@ function longestWord(str) {
     }, '');
 }
 
-console.log(longestWord('a b c d e fgh')); 
-console.log(longestWord('one two three')); 
+console.log(longestWord('a b c d e fgh'));
+console.log(longestWord('one two three'));
 console.log(longestWord('red blue grey')); 
