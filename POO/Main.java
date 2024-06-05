@@ -1,5 +1,7 @@
 package POO;
 import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,5 +29,14 @@ public class Main {
     cours.quitter();
 
     System.out.println("Places restantes après que l'étudiant ait quitté le cours: " + cours.getPlacesRestantes());
+
+    List<Individu> individus = new ArrayList<>();
+    individus.add(etudiant);
+    individus.add(new Enseignant("Dupont", "Jean", 124, "Informatique", 3000.0));
+
+    for (Individu individu : individus) {
+        individu.montrerDetails();
+    }
+
     }
 }

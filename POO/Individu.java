@@ -41,8 +41,6 @@ public abstract class Individu {
         return this.identifiant = identifiant;
     }
 
-    // méthode abstraite montrerDetails()
-
     public abstract void montrerDetails();
     
 }
